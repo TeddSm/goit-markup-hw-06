@@ -125,10 +125,6 @@ body {
     display: none;
 }
 
-.advantages-item {
-    max-width: 288px;
-}
-
 .advantages-title {
     font-weight: 700;
     font-size: 36px;
@@ -137,6 +133,7 @@ body {
     text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .advantages-paragraph {
