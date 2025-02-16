@@ -299,7 +299,7 @@ nav>ul {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
-        ), url(../images/hero-bg-mobile.png);
+        ), url(../images//hero/hero-bg-mobile-min.jpg);
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,31 +310,23 @@ nav>ul {
     align-items: center;
 }
 
-@media screen and (min-width: 1158px) {
-    .solutions {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7), 
-            rgba(46, 47, 66, 0.7)
-            ), url(../images/hero-bg.png);
-        min-height: 600px;
-        padding: 188px 0;
-    }
-}
-
-@media screen and (min-width: 768px), (max-width: 1157px) {
+@media screen and (min-width: 768px) {
     .solutions {
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
         ), url(../images/hero-bg-tablet.png);
-        max-width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
-        min-height: 432px;
-        display: flex;
-        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .solutions {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7), 
+            rgba(46, 47, 66, 0.7)
+            ), url(../images/hero/hero-bg-pc-min.jpg);
+        min-height: 600px;
+        padding: 188px 0;
     }
 }
 
@@ -714,6 +706,7 @@ nav>ul {
 
 .footer-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -723,6 +716,7 @@ nav>ul {
 
 @media screen and (min-width: 768px){
     .footer-box {
+       flex-direction: row;
        text-align: left;
        justify-content: left;
        align-items: start;
@@ -748,7 +742,7 @@ nav>ul {
 
     .footer-text-box {
         display: inline-block;
-        margin-right: 120px;
+        margin-right: auto;
     }
 
     .footer-logo {
@@ -884,6 +878,7 @@ nav>ul {
     line-height: 1.5;
     cursor: pointer;
     color: #fff;
+    margin: 0 auto;
 }
 
 .footer-form-btn-icon {
